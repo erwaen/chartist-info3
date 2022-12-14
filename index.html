@@ -1,146 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chartist INFORMATICA 3</title>
-  </head>
-  <body>
 
-    <h1>Examen final 1</h1>
-    <div id="barChartfinal1"></div>
-    <div style="display: flex; justify-content: center; margin-bottom: 50px;"> 
-      <h1>2020</h1>
-    </div> 
-    <div id="barChartfinal2"></div>
-    <div style="display: flex; justify-content: center; margin-bottom: 50px;"> 
-      <h1>2021</h1>
-    </div> 
-    <div id="barChartfinal3"></div>
-    <div style="display: flex; justify-content: center; margin-bottom: 50px;"> 
-      <h1>2022</h1>
-    </div> 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chartist INFORMATICA 3</title>
+</head>
+
+<body>
+
+  <h1>Examen final 1</h1>
+  <div style="display: flex; justify-content: center; ">
+   
+    <div style="display: flex; justify-content: center; margin-bottom: 50px; flex-direction: column;">
+      <div id="barChartfinal1"></div>
+      <div style="margin: 0 auto;">
+        <h1>2020</h1>
+      </div>
+    </div>
+    
+    <div style="display: flex; justify-content: center; margin-bottom: 50px; flex-direction: column;">
+      <div id="barChartfinal2"></div>
+      <div style="margin: 0 auto;">
+        <h1>2021</h1>
+      </div>
+      
+    </div>
+    
+    <div style="display: flex; justify-content: center; margin-bottom: 50px; flex-direction: column;">
+      <div id="barChartfinal3"></div>
+      <div style="margin: 0 auto;">
+        <h1>2022</h1>
+      </div>
+    </div>
+  </div>
     <!-- Div for image -->
-    <div
-      style="display: flex; flex-direction: column; align-items: center"
-      id="image"
-    >
-      <img
-        style="width: 50%; height: 100%"
-        src="./src/chartis.gif"
-        alt="chartis img"
-      />
+    <div style="display: flex; flex-direction: column; align-items: center" id="image">
+      <img style="width: 50%; height: 100%" src="./src/chartis.gif" alt="chartis img" />
       <h1>Solo 10kb</h1>
     </div>
 
-    <div
-      style="
+
+  <div style="
         font-size: 30px;
         color: #5b4422;
         background-color: #e3d8c3;
         border-radius: 10px;
         padding: 15px;
-      "
-    >
-      <h1>Chartist.JS</h1>
-      <p>
-        Chartist is a simple responsive charting library built with SVG. There
-        are hundreds of nice charting libraries already out there, but they are
-        either:
-      </p>
-      <!-- bullet list -->
-      <ul>
-        <li>use the wrong technologies for illustration (canvas)</li>
-        <li>weighs hundreds of kilobytes</li>
-        <li>are not flexible enough while keeping the configuration simple</li>
-        <li>are not friendly to designers</li>
-        <li>more annoying things</li>
-      </ul>
+      ">
+    <h1>Chartist.JS</h1>
+    <p>
+      Chartist is a simple responsive charting library built with SVG. There
+      are hundreds of nice charting libraries already out there, but they are
+      either:
+    </p>
+    <!-- bullet list -->
+    <ul>
+      <li>use the wrong technologies for illustration (canvas)</li>
+      <li>weighs hundreds of kilobytes</li>
+      <li>are not flexible enough while keeping the configuration simple</li>
+      <li>are not friendly to designers</li>
+      <li>more annoying things</li>
+    </ul>
 
-    </div>
-    <div style="height: 100px"></div>
+  </div>
+  <div style="height: 100px"></div>
 
-    <!-- Div for text -->
-    <div
-      style="
+  <!-- Div for text -->
+  <div style="
         font-size: 30px;
         color: #caf0f8;
         background-color: #0077b6;
         border-radius: 10px;
         padding: 15px;
-      "
-    >
-      <h1>Objetivo</h1>
-      <p>
-        El objetivo de Chartist es proporcionar una biblioteca simple, liviana y
-        no intrusiva para crear gráficos de manera responsiva en un sitio web.
-        <br /><br />
-        Es importante comprender que una de las principales intenciones de
-        Chartist es confiar en los estándares en lugar de proporcionar su propia
-        solución a un problema que ya está resuelto por esos estándares. <br />
-        Necesitamos aprovechar el poder de los navegadores hoy y despedirnos de
-        la idea de resolver todos los problemas nosotros mismos.
-      </p>
-    </div>
-    <div style="height: 100px"></div>
-    <div
-      style="
+      ">
+    <h1>Objetivo</h1>
+    <p>
+      El objetivo de Chartist es proporcionar una biblioteca simple, liviana y
+      no intrusiva para crear gráficos de manera responsiva en un sitio web.
+      <br /><br />
+      Es importante comprender que una de las principales intenciones de
+      Chartist es confiar en los estándares en lugar de proporcionar su propia
+      solución a un problema que ya está resuelto por esos estándares. <br />
+      Necesitamos aprovechar el poder de los navegadores hoy y despedirnos de
+      la idea de resolver todos los problemas nosotros mismos.
+    </p>
+  </div>
+  <div style="height: 100px"></div>
+  <div style="
         font-size: 30px;
         color: #dad7cd;
         background-color: #3a5a40;
         border-radius: 10px;
         padding: 15px;
-      "
-    >
-      <h1>Funcionamiento</h1>
-      <p>
-        Chartist trabaja con inline-SVG y tambien aprovecha el poder del DOM,
-        <br />
-        Esto también significa que Chartist no proporciona su propio manejo de
-        eventos, etiquetas, comportamientos o cualquier otra cosa que ya se
-        puede hacerse simplemente con HTML, JavaScript y CSS. <br /><br />
-        La única y única responsabilidad de Chartist es ayudarlo a dibujar
-        "Gráficos simples responsivos" utilizando inline-SVG en el DOM, CSS para
-        diseñar y JavaScript para proporcionar una API para configurar sus
-        gráficos.
-      </p>
-    </div>
-    <div style="height: 100px"></div>
+      ">
+    <h1>Funcionamiento</h1>
+    <p>
+      Chartist trabaja con inline-SVG y tambien aprovecha el poder del DOM,
+      <br />
+      Esto también significa que Chartist no proporciona su propio manejo de
+      eventos, etiquetas, comportamientos o cualquier otra cosa que ya se
+      puede hacerse simplemente con HTML, JavaScript y CSS. <br /><br />
+      La única y única responsabilidad de Chartist es ayudarlo a dibujar
+      "Gráficos simples responsivos" utilizando inline-SVG en el DOM, CSS para
+      diseñar y JavaScript para proporcionar una API para configurar sus
+      gráficos.
+    </p>
+  </div>
+  <div style="height: 100px"></div>
 
-    <div
-      style="
+  <div style="
         font-size: 30px;
         color: #fdf0d5;
         background-color: #003049;
         border-radius: 10px;
         padding: 15px;
-      "
-    >
-      <h1>Estructura del codigo</h1>
-      <p>
-        La structura del codigo de Chartist es muy simple, <br />
-        Chartis tiene 3 tipos de charts: Line, Bar y Pie, <br />
-        Cada uno tiene su propia funcion pero las 3 reciben 'los mismos' 3
-        argumentos: <br />
-        <br />
-        <b>1. Target(id de un elemento del DOM)</b> <br />
-        <b>2. Data</b> <br />
-        <b>3. Options</b> <br /><br />
+      ">
+    <h1>Estructura del codigo</h1>
+    <p>
+      La structura del codigo de Chartist es muy simple, <br />
+      Chartis tiene 3 tipos de charts: Line, Bar y Pie, <br />
+      Cada uno tiene su propia funcion pero las 3 reciben 'los mismos' 3
+      argumentos: <br />
+      <br />
+      <b>1. Target(id de un elemento del DOM)</b> <br />
+      <b>2. Data</b> <br />
+      <b>3. Options</b> <br /><br />
 
-        Tambien se le puede agregar otro argumento mas para aplicar custom css
+      Tambien se le puede agregar otro argumento mas para aplicar custom css
 
-        <br /><br />
-        Entonces el codigo se veria de la siguiente manera: <br />
-        <br />
-        <code
-          style="
+      <br /><br />
+      Entonces el codigo se veria de la siguiente manera: <br />
+      <br />
+      <code style="
             background-color: #495057;
             border-radius: 3px;
             font-family: courier, monospace;
             padding: 0 3px;
-          "
-        >
+          ">
           <span style="color: #1982c4">new</span>
           <span style="color: #e63946">BarChart</span>('#my_element_id', data,
           options );
@@ -153,29 +151,30 @@
           <span style="color: #e63946">LineChart</span>('#my_element_id3', data,
           options );
         </code>
-        <br /><br />
-        Donde data y options tienen su propia estructura, <br />
-      </p>
-    </div>
+      <br /><br />
+      Donde data y options tienen su propia estructura, <br />
+    </p>
+  </div>
 
-    <div style="height: 100px"></div>
+  <div style="height: 100px"></div>
 
-    <h1>Bar Chart</h1>
-    <div id="barChart"></div>
+  <h1>Bar Chart</h1>
+  <div id="barChart"></div>
 
-    <h1>Line Chart</h1>
-    <div id="lineChart"></div>
-    <div id="lineChart2"></div>
+  <h1>Line Chart</h1>
+  <div id="lineChart"></div>
+  <div id="lineChart2"></div>
 
-    <h1>Pie Chart</h1>
-    <div id="pieChart"></div>
-    <div id="pieChart2"></div>
-    <div id="pieChartAnimated"></div>
+  <h1>Pie Chart</h1>
+  <div id="pieChart"></div>
+  <div id="pieChart2"></div>
+  <div id="pieChartAnimated"></div>
 
-    <script type="module" src="/src/barChart.ts"></script>
-    <script type="module" src="/src/lineChart.ts"></script>
-    <script type="module" src="/src/pieChart.ts"></script>
-    <script type="module" src="/src/pieChartAnimated.ts"></script>
-    <script type="module" src="/src/hola.js"></script>
-  </body>
+  <script type="module" src="/src/barChart.ts"></script>
+  <script type="module" src="/src/lineChart.ts"></script>
+  <script type="module" src="/src/pieChart.ts"></script>
+  <script type="module" src="/src/pieChartAnimated.ts"></script>
+  <script type="module" src="/src/hola.js"></script>
+</body>
+
 </html>

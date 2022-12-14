@@ -88,7 +88,7 @@ const data3: BarChartData= {
 };
 
 const options3: BarChartOptions = {
-  seriesBarDistance: 1,
+  seriesBarDistance: 10,
   high: 2000,
   low: -10,
   axisX: {
