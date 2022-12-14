@@ -47,7 +47,7 @@ const data1: BarChartData= {
 const options1: BarChartOptions = {
   seriesBarDistance: 1,
   high: 2000,
-  low: -10,
+  low: 0,
 
   axisX: {
     labelInterpolationFnc(value, index) {
@@ -69,7 +69,7 @@ const data2: BarChartData= {
 const options2: BarChartOptions = {
   seriesBarDistance: 1,
   high: 2000,
-  low: -10,
+  low: 0,
 
   axisX: {
     labelInterpolationFnc(value, index) {
@@ -90,7 +90,7 @@ const data3: BarChartData= {
 const options3: BarChartOptions = {
   seriesBarDistance: 10,
   high: 2000,
-  low: -10,
+  low: 0,
   axisX: {
     labelInterpolationFnc(value, index) {
       return index % 1 === 0 ? value : null;
